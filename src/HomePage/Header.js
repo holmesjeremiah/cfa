@@ -6,8 +6,16 @@ import headerPhoto from './headerPhoto.jpg';
 
 const Header = () => {
     const [deviceIsMobile, setDeviceIsMobile] = useState(false);
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
+    const listControls = useAnimation();
+    const imageControls = useAnimation();
+    const [listRef, listInView] = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    });
+    const [imageRef, imageInView] = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    });
 
     useEffect(() => {
         const handleResize = () => {
@@ -21,12 +29,20 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-        if (inView) {
-            controls.start('visible');
+        if (listInView) {
+            listControls.start('visible');
         } else {
-            controls.start('hidden');
+            listControls.start('hidden');
         }
-    }, [controls, inView]);
+    }, [listControls, listInView]);
+
+    useEffect(() => {
+        if (imageInView) {
+            imageControls.start('visible');
+        } else {
+            imageControls.start('hidden');
+        }
+    }, [imageControls, imageInView]);
 
     const containerVariants = {
         hidden: {},
@@ -60,8 +76,8 @@ const Header = () => {
                         style={{ display: 'flex', alignContent: 'end', flexWrap: 'wrap' }}
                         variants={containerVariants}
                         initial="hidden"
-                        animate={controls}
-                        ref={ref}
+                        animate={listControls}
+                        ref={listRef}
                     >
                         <motion.div style={{ borderLeft: '2px solid #FF5757', margin: '25px', paddingLeft: '10px' }} variants={itemVariants}>
                             <span style={{ fontSize: '25px' }}>No</span><br />
@@ -97,13 +113,13 @@ const Header = () => {
                         alt=""
                         style={{ objectFit: 'cover', borderRadius: '10px' }}
                         initial="hidden"
-                        animate={controls}
+                        animate={imageControls}
                         variants={{
                             hidden: { opacity: 0, x: 100 },
                             visible: { opacity: 1, x: 0 }
                         }}
                         transition={{ duration: 1.5 }}
-                        ref={ref}
+                        ref={imageRef}
                     />
                 </div>
             </div>
