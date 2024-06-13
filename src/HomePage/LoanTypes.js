@@ -61,7 +61,7 @@ const LoanTypes = () => {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.75
+                staggerChildren: 0.5
             }
         }
     };
