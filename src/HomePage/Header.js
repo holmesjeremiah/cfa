@@ -3,9 +3,11 @@ import { IoMdInformationCircleOutline } from "react-icons/io";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import headerPhoto from './headerPhoto.jpg';
+import HowItWorksModal from './HowItWorksModal';
 
 const Header = () => {
     const [deviceIsMobile, setDeviceIsMobile] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     const listControls = useAnimation();
     const imageControls = useAnimation();
     const [listRef, listInView] = useInView({
@@ -62,6 +64,9 @@ const Header = () => {
         }
     };
 
+    const handleShowModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
+
     return (
         <div className="container" style={{ display: 'flex', justifyContent: 'center' }} >
             <div className="row">
@@ -99,7 +104,7 @@ const Header = () => {
                             </button>
                         </div>
                         <div>
-                            <a href="" style={{ color: '#41628B' }}>
+                            <a href="#" onClick={handleShowModal} style={{ color: '#41628B' }}>
                                 How it works
                                 <IoMdInformationCircleOutline style={{ color: '#41628B', fontSize: '25px', marginLeft: '5px' }} />
                             </a>
@@ -123,6 +128,7 @@ const Header = () => {
                     />
                 </div>
             </div>
+            <HowItWorksModal show={showModal} handleClose={handleCloseModal} />
         </div>
     );
 };

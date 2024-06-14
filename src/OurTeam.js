@@ -10,7 +10,6 @@ const OurTeam = () => {
         {
             name: "John Harrison",
             photo: 'jHarrison.png',
-            linkedIn: 'https://www.linkedin.com/in/john-harrison68/',
             title: "Executive Director, Chief Financial Officer",
             description: "John oversees the creation, management, and implementation of the company’s financial strategies within the merchant financing sector. He is responsible for guiding clients through their asset allocation decisions specific to merchant financing. John is known for providing top-notch service and has a profound understanding of merchant financing practices. He is a member of both the CFA Institute and the New York Society of Security Analysts. John holds a Bachelor of Science in Finance from the University of California, Berkeley."
         },
@@ -65,7 +64,10 @@ const OurTeam = () => {
                                 </div>
                                 <div style={{ fontSize: '35px' }}>
                                     {member.name}
-                                    <a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
+                                    {
+                                        member.linkedIn &&
+                                        <a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
+                                    }
                                 </div>
                                 <div style={{ height: '150px', width: '150px', margin: 'auto' }}>
                                     <img src={'/' + member.photo} alt="" style={{ objectFit: 'cover', width: '100%', maxHeight: '100%', borderRadius: '50%' }} />

@@ -1,5 +1,6 @@
 import Footer from './Footer';
 import Header from './HomePage/Header';
+
 import LoanDetails from './HomePage/LoanDetails';
 import LoanTypes from './HomePage/LoanTypes';
 import Nav from './Nav';
