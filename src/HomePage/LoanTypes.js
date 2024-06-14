@@ -42,7 +42,7 @@ const LoanTypes = () => {
                 "No collateral required beyond your invoices"
             ],
             "idealFor": "Businesses needing substantial upfront capital for growth or major expenses.",
-            "banks": ['tabBankLogo.png', 'ombLogo.svg', '1stcc.png']
+            "banks": ['tabBankLogo.png', 'mtbLogo.webp', 'ombLogo.svg', '1stcc.png']
         }
     ];
 
@@ -79,8 +79,8 @@ const LoanTypes = () => {
     };
 
     return (
-        <div className="container">
-            <div style={{ color: 'black', fontWeight: 'bold', fontSize: '50px', borderLeft: '5px solid #FF5757', paddingLeft: '10px', marginBottom: '25px', marginLeft: '50px' }}>Financing Solutions for Your Business</div>
+        <div className="container" id="fundingSolutions">
+            <div style={{ color: 'black', fontWeight: 'bold', fontSize: '30px', borderLeft: '5px solid #FF5757', paddingLeft: '10px', marginBottom: '25px', marginLeft: '50px' }}>Financing Solutions for Your Business</div>
             <motion.div
                 ref={ref}
                 style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '25px' }}

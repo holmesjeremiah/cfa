@@ -8,6 +8,7 @@ import Nav from './Nav';
 const HomePage = () => {
     return (
         <div style={{ backgroundColor: '#E4EAF1' }}>
+
             <Nav />
             <div style={{ height: '50px' }}></div>
             <Header />

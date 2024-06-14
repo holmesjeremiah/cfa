@@ -26,7 +26,7 @@ const OurTeam = () => {
             name: "Alex Collins",
             photo: 'aCollins.webp',
             title: "Senior Director, Trust and Wealth Advisor",
-            description: "Sophia is a seasoned fiduciary professional with over twenty years of expertise in domestic and international trust administration within the merchant financing sector. She is proficient in managing revocable and irrevocable trusts, guardianships, special needs trusts, investment management accounts, business entities, and non-resident alien relationships, all with a focus on merchant financing. Sophia graduated from Boston University and the American Bankers Association Trust School."
+            description: "Alex is a seasoned fiduciary professional with over twenty years of expertise in domestic and international trust administration within the merchant financing sector. He is proficient in managing revocable and irrevocable trusts, guardianships, special needs trusts, investment management accounts, business entities, and non-resident alien relationships, all with a focus on merchant financing. Alex graduated from Boston University and the American Bankers Association Trust School."
         },
         {
             name: "Emily Wright",
@@ -47,7 +47,7 @@ const OurTeam = () => {
             <div className="container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                 {
                     teamMembers.map((member, index) => (
-                        <div style={{ backgroundColor: 'white', padding: '25px', width: '500px', margin: '25px' }}>
+                        <div style={{ backgroundColor: 'white', padding: '25px', width: '500px', margin: '25px', borderRadius: '10px' }}>
                             <div>
 
                             </div>
