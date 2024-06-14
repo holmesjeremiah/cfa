@@ -17,7 +17,8 @@ const LoanTypes = () => {
                 "Competitive interest rates",
                 "Flexible repayment terms"
             ],
-            "idealFor": "Businesses with consistent invoicing and strong receivables management."
+            "idealFor": "Businesses with consistent invoicing and strong receivables management.",
+            "banks": ['acbLogo.png', 'tabBankLogo.png', 'ccbLogo.svg',]
         },
         {
             "title": "Construction Loans",
@@ -28,7 +29,8 @@ const LoanTypes = () => {
                 "Tailored to the unique needs of construction projects",
                 "Competitive interest rates"
             ],
-            "idealFor": "Construction companies undertaking new projects, expansions, or renovations."
+            "idealFor": "Construction companies undertaking new projects, expansions, or renovations.",
+            "banks": ['sccuLogo.png', 'bmoLogo.png']
         },
         {
             "title": "Term Loans",
@@ -39,7 +41,8 @@ const LoanTypes = () => {
                 "Flexible loan terms to match your business cycle",
                 "No collateral required beyond your invoices"
             ],
-            "idealFor": "Businesses needing substantial upfront capital for growth or major expenses."
+            "idealFor": "Businesses needing substantial upfront capital for growth or major expenses.",
+            "banks": ['tabBankLogo.png', 'ombLogo.svg', '1stcc.png']
         }
     ];
 
@@ -111,6 +114,16 @@ const LoanTypes = () => {
                             </ul>
                             <div style={{ color: '#41628B', fontSize: '17.5px' }}>
                                 {loan.idealFor}
+                            </div>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', }}>
+                                {
+                                    loan.banks &&
+                                    loan.banks.map((bankLogo, index) => (
+                                        <div style={{ border: '2px solid #FFD6D6', padding: '10px', borderRadius: '10px' }}>
+                                            <img style={{ height: '40px', }} src={'/' + bankLogo} alt="" />
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </motion.div>
                     ))

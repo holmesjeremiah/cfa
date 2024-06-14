@@ -3,7 +3,7 @@ import logoAlt from './cfaLogoAlt.png'
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
             <div className='container row' style={{ margin: '25px' }}>
                 <div className="col-sm-6">
                     <img src={logoAlt} alt="" style={{ height: '100px' }} />
@@ -15,7 +15,7 @@ const Footer = () => {
                         Quick Links
                     </div>
                     <div style={{ paddingLeft: '15px' }}>
-                        <a href="" style={{ color: '#41628b !important' }}>Home</a>
+                        <a href="/aboutus" style={{ color: '#41628b !important' }}>Home</a>
                         <br />
                         <a href="" style={{ color: '#41628b !important' }}>About Us</a>
                         <br />
@@ -24,9 +24,33 @@ const Footer = () => {
 
                 </div>
                 <div className="col-sm-3" style={{ paddingLeft: '10px', fontSize: '30px', color: '#41628b', display: 'flex', gap: '10px', margin: '25px 0' }}>
-                    <FaLinkedin />
-                    <FaFacebookF />
-                    <FaInstagram />
+
+                    <a href="https://www.facebook.com/profile.php?id=61560812047498" style={{ color: '#41628b !important', }}>
+                        <FaFacebookF />
+                    </a>
+                    <a href="">
+                        <FaInstagram />
+                    </a>
+                    <a href="">
+                        <FaLinkedin />
+                    </a>
+                </div>
+
+            </div>
+            <div className='container row' style={{ margin: '25px' }}>
+                <div className="col-sm-12">
+                    <ol>
+
+                        <li>
+                            Annual Percentage Yield (APY) accurate as of 06/13/2024. Rate tiers are as follows: 5.00% APY applies to balances between $0.00 and $24,999.99; 5.00% APY applies to balances between $25,000.00 and $49,999.99; 5.00% APY applies to balances of $50,000.00 and $99,999.99; 5.00% APY applies to balances of $100,000.00 and $249,999.99; and 5.00% APY applies to balances of $250,000.00 and greater. Rates are variable and subject to change at any time without notice, at the sole discretion of the bank. Fees may reduce earnings.
+                        </li>
+                        <li>
+                            National average source: FDIC as of 1/25/2024.
+                        </li>
+                        <li>
+                            Standard data and message rates may apply to Mobile Banking services. This includes the use of Commercial Funders of America Mobile and other services. Android is a trademark of Google LLC. iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries.
+                        </li>
+                    </ol>
                 </div>
 
             </div>
