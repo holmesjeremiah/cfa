@@ -30,7 +30,7 @@ const OurTeam = () => {
         {
             name: "Alex Collins",
             photo: 'aCollins.webp',
-            linkedIn: 'https://www.linkedin.com/in/alex-collins-a159b2313',
+            linkedIn: 'https://www.linkedin.com/in/alex-collins-284541314/',
             title: "Senior Director, Trust and Wealth Advisor",
             description: "Alex is a seasoned fiduciary professional with over twenty years of expertise in domestic and international trust administration within the merchant financing sector. He is proficient in managing revocable and irrevocable trusts, guardianships, special needs trusts, investment management accounts, business entities, and non-resident alien relationships, all with a focus on merchant financing. Alex graduated from Boston University and the American Bankers Association Trust School."
         },
