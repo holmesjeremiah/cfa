@@ -16,14 +16,14 @@ const OurTeam = () => {
         {
             name: "Linda Martinez",
             photo: 'lMartinez.png',
-            linkedIn: 'https://www.linkedin.com/in/linda-martinez-5a8834313/',
+            //linkedIn: 'https://www.linkedin.com/in/linda-martinez-5a8834313/',
             title: "Executive Director, Senior Wealth Advisor, JD",
             description: "Linda focuses on creating and executing investment strategies tailored to merchant financing. She has dedicated her career to addressing all aspects of her clients' investment and fiduciary requirements within the merchant financing industry. With over thirty years of experience in wealth management within the New York market, Linda holds a BS/BA degree from the University of Texas and a JD from Harvard Law School."
         },
         {
             name: "Steven MacKinnon",
             photo: 'sMacKinnon.jpg',
-            linkedIn: 'https://www.linkedin.com/in/steven-mackinnon-839834313/',
+            //linkedIn: 'https://www.linkedin.com/in/steven-mackinnon-839834313/',
             title: "Executive Director, Chief Trust Officer",
             description: "Steven is a CPA with more than three decades of experience in fiduciary services and taxation, including trust and estate planning specific to merchant financing for high-net-worth individuals. He has spent his career assisting clients with intricate tax and wealth structures to meet their financial and legacy objectives within the merchant financing industry. Steven earned his Bachelor of Accounting from the University of Miami and a Master of Science in Taxation from New York University."
         },
@@ -37,7 +37,7 @@ const OurTeam = () => {
         {
             name: "Emily Wright",
             photo: 'eWright.webp',
-            linkedIn: 'https://www.linkedin.com/in/emily-wright-0b29ab313/',
+            //linkedIn: 'https://www.linkedin.com/in/emily-wright-0b29ab313/',
             title: "Executive Director, Head of Investment Management, and CERTIFIED FINANCIAL PLANNER™ (CFP®)",
             description: "Emily is dedicated to assisting individuals, families, and business owners in managing their wealth within the merchant financing sector. She holds an MBA from Stanford Graduate School of Business with a focus on Asset Management and Sales & Trading. Emily is passionate about developing tailored investment strategies to help clients achieve their financial goals specifically related to merchant financing."
         }
@@ -65,8 +65,8 @@ const OurTeam = () => {
                                 <div style={{ fontSize: '35px' }}>
                                     {member.name}
                                     {
-                                        //member.linkedIn &&
-                                        //<a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
+                                        member.linkedIn &&
+                                        <a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
                                     }
                                 </div>
                                 <div style={{ height: '150px', width: '150px', margin: 'auto' }}>
