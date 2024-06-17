@@ -65,8 +65,8 @@ const OurTeam = () => {
                                 <div style={{ fontSize: '35px' }}>
                                     {member.name}
                                     {
-                                        member.linkedIn &&
-                                        <a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
+                                        //member.linkedIn &&
+                                        //<a href={member.linkedIn}><ImLinkedin size="25px" style={{ margin: '0 0 10px 10px' }} /></a>
                                     }
                                 </div>
                                 <div style={{ height: '150px', width: '150px', margin: 'auto' }}>
