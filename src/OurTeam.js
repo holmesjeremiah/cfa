@@ -11,7 +11,7 @@ const OurTeam = () => {
             name: "John Harrison",
             photo: 'jHarrison.png',
             title: "Executive Director, Chief Financial Officer",
-            linkedIn: 'https://www.linkedin.com/in/john-harrison-84ab32314/',
+            //linkedIn: 'https://www.linkedin.com/in/john-harrison-84ab32314/',
             description: "John oversees the creation, management, and implementation of the company’s financial strategies within the merchant financing sector. He is responsible for guiding clients through their asset allocation decisions specific to merchant financing. John is known for providing top-notch service and has a profound understanding of merchant financing practices. He is a member of both the CFA Institute and the New York Society of Security Analysts. John holds a Bachelor of Science in Finance from the University of California, Berkeley."
         },
         {
